@@ -58,8 +58,8 @@ let options = {
         secure: true
     },
     identity: {
-        username: "agent_kee",
-        password: "oauth:67gubuh9qu54l7bnq5g2q7u5i8ab8e"
+        username: "ME",
+        password: "oauth:xxxXXXxxx"
     },
     channels: [ "agent_kee" ]
     // logger: Object - Custom logger with the methods info, warn, and error
@@ -77,7 +77,7 @@ client.on('connected', onConnectedHandler);
 client.connect();
 
 client.on('connected', (address, port) => {
-    client.action('agent_kee', 'Hello, the bot is now connected');    
+    client.action('Me', 'Hello, the bot is now connected');    
 });
 
 
