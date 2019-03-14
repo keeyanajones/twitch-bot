@@ -1,4 +1,3 @@
 # twitch-bot
 twitch-bot
-![Bot](Combo_Purple_RGB.png =602x371)
-
+<img src="Combo_Purple_RGB.png" alt="Twitch" width="602" height="371"/>
