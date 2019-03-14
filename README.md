@@ -1,3 +1,3 @@
 # twitch-bot
 twitch-bot
-![Bot](d_Wallpaper.png)
+![Bot](Combo_Purple_RGB.png)
