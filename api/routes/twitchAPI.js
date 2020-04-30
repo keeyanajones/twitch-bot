@@ -1,5 +1,5 @@
 /* 
- * testAPI
+ * twitchAPI
  */
 
 var express = require('express');

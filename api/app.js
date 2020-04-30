@@ -4,9 +4,13 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors');
+const dotenv = require('dotenv').config();
+
+
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-const testAPIRouter = require('./routes/testAPI');
+const testAPIRouter = require('./routes/twitchAPI');
+
 const tmi = require('tmi.js');
 
 var app = express();
@@ -24,11 +28,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/testAPI', testAPIRouter);
-
-const tmi = require('tmi.js');
+app.use('/twitchAPI', testAPIRouter);
 
 // Define configuration options
+/**
+ * 
+ * User Access Token 	
+ * ID Token 	
+ * App Access Token
+ * 
+ * ***/
 const opts = {
   identity: {
     username: ' ',
@@ -48,6 +57,29 @@ client.on('connected', onConnectedHandler);
 
 // Connect to Twitch:
 client.connect();
+
+
+// ai
+  // anticipate
+  // engage
+  // enter 
+  // exit 
+  // reflect
+
+    // intent
+      // intentChild
+        // action
+
+
+
+
+/**
+  because the interaction between the two is changing to a ai situation. I'm going to
+  change the handling of client to keep it simple
+**/
+
+
+
 
 // Called every time a message comes in
 function onMessageHandler (target, context, msg, self) {
@@ -76,6 +108,8 @@ function rollDice () {
 function onConnectedHandler (addr, port) {
   console.log(`* Connected to ${addr}:${port}`);
 }
+
+console.log(`process.env`);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

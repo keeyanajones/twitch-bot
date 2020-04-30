@@ -1,4 +1,12 @@
 # twitch-bot
 twitch-bot starter
+IN DEVELOPMENT
+VERSION 1.0.1
+TYPE : Bot
+CREATED : Apr 15, 2019
+STATUS : LOCAL TEST
+GITHUB PROJECT : [ BOT ]
 
-<img src="Combo_Purple_RGB.png" alt="Twitch" width="602" height="371"/>
+
+
+
